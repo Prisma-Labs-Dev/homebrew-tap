@@ -5,20 +5,20 @@
 class ConfluenceCli < Formula
   desc "CLI for Confluence Cloud API, optimized for AI agents"
   homepage "https://github.com/Prisma-Labs-Dev/confluence-cli"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.1/confluence-cli_darwin_amd64.tar.gz"
-      sha256 "13ec818cda84d1e5aa43993621c320e7b60738142b98de51d0c3c6112383980d"
+      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.2/confluence-cli_darwin_amd64.tar.gz"
+      sha256 "793bc2885ae183fcaba0747a9a0b5677fb1618670f0ef519f7eb3219ea8f58bd"
 
       def install
         bin.install "confluence"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.1/confluence-cli_darwin_arm64.tar.gz"
-      sha256 "366cf54966741f3f23b621245f82481f257b88ffdcb0dedb970b7d744478e8d9"
+      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.2/confluence-cli_darwin_arm64.tar.gz"
+      sha256 "be6ac0b5d79ce0d1d32bb163d1499ce1217dedd7f4f1eaff65e040560519d7b8"
 
       def install
         bin.install "confluence"
@@ -28,15 +28,15 @@ class ConfluenceCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.1/confluence-cli_linux_amd64.tar.gz"
-      sha256 "e772e425e9315242df51e7ce5483da2f2a816e484b0db7c0b6c9d44aa8855806"
+      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.2/confluence-cli_linux_amd64.tar.gz"
+      sha256 "2907e0610ba557cf661de3b52cd577174cc04dc8a700ae08bd2ddede236477d1"
       def install
         bin.install "confluence"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.1/confluence-cli_linux_arm64.tar.gz"
-      sha256 "630d2fd370981f7eece9eb9594f619871c634a467a24acda1363ffc10cde309f"
+      url "https://github.com/Prisma-Labs-Dev/confluence-cli/releases/download/v0.3.2/confluence-cli_linux_arm64.tar.gz"
+      sha256 "b750875b988f84da2827a788548829586cb524ce70922ae629be25428d23ec24"
       def install
         bin.install "confluence"
       end
